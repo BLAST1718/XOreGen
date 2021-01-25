@@ -3,7 +3,7 @@ name: XOreGen
 version: 1.0.0
 
 website: www.cosmocraft.ml
-main: LuciferVerma\XOreGen\Main
+main: LuciferVerma\XWoodGen\Main
 
 api: 3.0.0
 
