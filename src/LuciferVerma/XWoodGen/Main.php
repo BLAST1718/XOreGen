@@ -1,6 +1,6 @@
 <?php
 
-namespace LuciferVerma\XOreGen;
+namespace LuciferVerma\XWoodGen;
 
 use pocketmine\block\Block;
 use pocketmine\event\block\BlockBreakEvent;
@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener{
         $player = $event->getPlayer();
         $block = $event->getBlock();
         if($block->getLevel()->getName() === $this->config->get("levelname")){
-            if($block->getId() === Block::COAL_ORE && $this->config->get("coal_ore") === true){
+            if($block->getId() === Block::OAK_WOOD && $this->config->get("oak_Wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
                 }
